@@ -3,20 +3,17 @@ package app;
 import java.util.Scanner;
 
 public class Converter {
-    // miles - kilometers
+    //  - kilometers - miles
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter miles: ");
-        double miles = scanner.nextDouble();
-        double kilometers = milesToKilometers(miles);
-        System.out.println(miles + " miles is equal to " + kilometers + " kilometers.");
-    }
-
-    public static double milesToKilometers(double miles) {
-        double kilometers = miles * 1.609344;
-        return kilometers;
+            double kilometers = 10;
+            double miles = kilometersToMiles(kilometers);
+            System.out.println(kilometers + " kilometers is equal to " + miles + " miles.");
 
 
+        }
+        public static double kilometersToMiles(double kilometers) {
+            double miles = kilometers / 1.609344;
+            return miles;
 
     }
 }
