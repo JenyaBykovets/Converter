@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class Converter {
     //  - kilometers - miles
     public static void main(String[] args) {
-            double kilometers = 10;
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Enter kilometers: ");
+            double kilometers = scanner.nextDouble();
             double miles = kilometersToMiles(kilometers);
             System.out.println(kilometers + " kilometers is equal to " + miles + " miles.");
 
